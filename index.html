@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nicholas Woyak | Process Improvement Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#eef1f3;--panel:#fff;--fg:#1a2127;--muted:#56636d;--line:#cdd5db;--accent:#1f5f8b;--accent-soft:#e2edf5;
+--f-d:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;--f-b:"Source Sans 3","Segoe UI",Arial,sans-serif;--f-m:"IBM Plex Mono",Consolas,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#12171b;--panel:#1b2227;--fg:#e4e9ec;--muted:#9aa7b0;--line:#3a4650;--accent:#6fb0dc;--accent-soft:#1d3342;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 var(--f-b);padding:32px 16px 56px}
+.wrap{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:8px;border-bottom:3px solid var(--accent);padding-bottom:18px}
+h1{font:700 2.3rem/1.05 var(--f-d);margin:0;letter-spacing:.01em}
+.role{font:600 1.15rem var(--f-d);color:var(--accent);letter-spacing:.03em;text-transform:uppercase}
+.lead{color:var(--muted);max-width:62ch;margin:0}
+.contact{font:500 .82rem var(--f-m);color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 16px}
+.contact a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:720px){.grid{grid-template-columns:minmax(0,1fr)}h1{font-size:1.9rem}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.tag{align-self:flex-start;font:600 .7rem var(--f-m);text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:3px;background:var(--accent-soft);color:var(--accent)}
+h2{font:700 1.4rem/1.15 var(--f-d);margin:0;overflow-wrap:anywhere}
+dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 12px}
+dt{font:600 .72rem var(--f-m);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding-top:3px}
+dd{margin:0;overflow-wrap:anywhere}
+.tools{display:flex;flex-wrap:wrap;gap:6px}
+.tools span{font-size:.8rem;padding:2px 9px;border-radius:999px;border:1px solid var(--line)}
+.open{margin-top:auto;align-self:flex-start;font:600 1rem var(--f-d);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--panel);background:var(--accent);padding:9px 16px;border-radius:5px}
+.open:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.pending{margin-top:auto;font-size:.88rem;color:var(--muted);font-style:italic}
+footer{font-size:.85rem;color:var(--muted)}
+</style></head><body>
+<div class="wrap">
+<header>
+  <h1>Nicholas T. Woyak</h1>
+  <div class="role">Process Improvement &amp; Automation Portfolio</div>
+  <p class="lead">I find where work breaks down, map it, and build the tool that fixes it. These are working examples, built with AI as a development partner. Work samples are shown as generic versions: company names, people, systems, and file locations have been replaced.</p>
+  <div class="contact"><span>Racine, WI</span><span>262-210-6425</span><span>Nicholas.Woyak.Jobs@gmail.com</span><a href="https://www.linkedin.com/in/nwoyak">linkedin.com/in/nwoyak</a></div>
+</header>
+
+<div class="grid">
+  <article class="card">
+    <span class="tag">Process mapping</span>
+    <h2>Engineering Change Process: Before and After</h2>
+    <dl>
+      <dt>Problem</dt><dd>A design change took about 10 weeks to reach production, and only about 10% of that time was actual work. The rest was waiting between teams.</dd>
+      <dt>Built</dt><dd>Current and future state process flows and value stream maps for two sites. Ten targeted improvements, including parallel work, async alignment and AI-drafted instructions, cut lead time by about two thirds.</dd>
+    </dl>
+    <div class="tools"><span>Process mapping</span><span>Value stream mapping</span><span>Lean</span><span>Claude</span></div>
+    <a class="open" href="https://woyakn77-create.github.io/engineering-change-process/">See before and after</a>
+  </article>
+
+  <article class="card">
+    <span class="tag">AI tool</span>
+    <h2>VOC Audit Logger</h2>
+    <dl>
+      <dt>Problem</dt><dd>An audit of volatile organic compounds across shop work areas meant reading every label and safety data sheet by hand and typing results into a spreadsheet.</dd>
+      <dt>Built</dt><dd>A phone-first app: photograph a label, AI identifies the product and classifies it against the EPA VOC definition, the auditor reviews and logs it, and the log exports as CSV in the audit template's column order.</dd>
+    </dl>
+    <div class="tools"><span>AI vision</span><span>Prompt design</span><span>HTML/JavaScript</span><span>Claude</span></div>
+    <a class="open" href="https://woyakn77-create.github.io/voc-audit-logger/">Try the demo</a>
+  </article>
+
+  <article class="card">
+    <span class="tag">Live production</span>
+    <h2>Sunday Stage Planner</h2>
+    <dl>
+      <dt>Problem</dt><dd>A volunteer worship band's lineup changes every week, and the stage plot, input list, and monitor assignments were rebuilt by hand each time.</dd>
+      <dt>Built</dt><dd>A five-step planner: pick instruments, assign people, place them on stage, map console and stage-box inputs, and export a printable stage plot PDF for the audio team.</dd>
+    </dl>
+    <div class="tools"><span>Audio workflow</span><span>HTML/JavaScript</span><span>PDF export</span><span>Claude</span></div>
+    <a class="open" href="https://woyakn77-create.github.io/stage-planner/">Open the planner</a>
+  </article>
+
+  <article class="card" id="mlb">
+    <span class="tag">Data analysis</span>
+    <h2>MLB Payroll-Adjusted Standings</h2>
+    <dl>
+      <dt>Question</dt><dd>What would the 2026 standings look like if every team's runs were scaled by how much it spends?</dd>
+      <dt>Built</dt><dd>A model that replays all 2,429 games of 2026 (and 2,106 from 1982), checked against official standings, with each team's runs scaled by a payroll multiplier. Penalty, bonus, cap and floor inputs re-sort the standings live. Built as an Excel workbook with live formulas and as this web simulator.</dd>
+    </dl>
+    <div class="tools"><span>Excel modeling</span><span>Data validation</span><span>Python</span><span>Claude</span></div>
+    <a class="open" href="https://woyakn77-create.github.io/mlb-payroll-simulator/">Run the simulator</a>
+  </article>
+
+  <article class="card">
+    <span class="tag">Workflow automation</span>
+    <h2>One-Button Desk: Stream Deck Automation</h2>
+    <dl>
+      <dt>Problem</dt><dd>Repeat tasks across Excel, email, screen capture and AI tools each took several clicks or a shortcut someone had to remember.</dd>
+      <dt>Built</dt><dd>A 15-key control panel with five pages: one-press quality status macros with an audit log, email triage, capture presets and AI prompt templates. Includes a hotkey conflict audit, a Python icon generator (160 icons), and a link that lets Claude press keys.</dd>
+    </dl>
+    <div class="tools"><span>Excel VBA</span><span>AutoHotkey</span><span>Power Automate</span><span>Python</span><span>MCP</span></div>
+    <a class="open" href="https://woyakn77-create.github.io/stream-deck-automation/">Try the deck</a>
+  </article>
+</div>
+
+<footer>Built with Claude. Each tool runs in the browser. Code for every project is on <a href="https://github.com/woyakn77-CREATE">GitHub</a>.</footer>
+</div>
+<script data-goatcounter="https://nwoyak.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>

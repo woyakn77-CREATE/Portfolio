@@ -1,6 +1,6 @@
 # Nicholas Woyak | Process Improvement Portfolio
 
-**Live:** https://woyakn77-create.github.io/portfolio/
+**Live:** https://woyakn77-create.github.io/Portfolio/
 
 I find where work breaks down, map it, and build the tool that fixes it. This site collects working examples, built with AI (Claude) as a development partner.
 
